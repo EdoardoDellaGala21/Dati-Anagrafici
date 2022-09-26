@@ -1,0 +1,10 @@
+<!--
+<app-dati-anagrafici [datiAnagrafici] = "datiGlobali"></app-dati-anagrafici>
+<p> {{datiGlobali.nome}}</p>
+<p> {{datiGlobali.cognome}}</p>
+<p> {{datiGlobali.dataNascita}}</p>
+-->
+<app-add-item (newItemEvent)="addItem($event)"></app-add-item>
+<ul>
+  <li *ngFor="let item of lista">{{item}}</li>
+</ul>
